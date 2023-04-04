@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8035CB6A29DB8CBA00F03E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035CB6929DB8CBA00F03E02 /* AppDelegate.swift */; };
 		8035CB6C29DB8CBA00F03E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035CB6B29DB8CBA00F03E02 /* SceneDelegate.swift */; };
-		8035CB6E29DB8CBA00F03E02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035CB6D29DB8CBA00F03E02 /* ViewController.swift */; };
-		8035CB7129DB8CBA00F03E02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8035CB6F29DB8CBA00F03E02 /* Main.storyboard */; };
 		8035CB7329DB8CBB00F03E02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8035CB7229DB8CBB00F03E02 /* Assets.xcassets */; };
 		8035CB7629DB8CBB00F03E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8035CB7429DB8CBB00F03E02 /* LaunchScreen.storyboard */; };
+		8035CB7E29DB8DC500F03E02 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035CB7D29DB8DC500F03E02 /* View.swift */; };
+		8035CB8029DB8DCE00F03E02 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035CB7F29DB8DCE00F03E02 /* Interactor.swift */; };
+		8035CB8229DB8DD400F03E02 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035CB8129DB8DD400F03E02 /* Presenter.swift */; };
+		8035CB8429DB8DDA00F03E02 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035CB8329DB8DDA00F03E02 /* Entity.swift */; };
+		8035CB8629DB8DE000F03E02 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035CB8529DB8DE000F03E02 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8035CB6629DB8CBA00F03E02 /* VIPER-Remind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-Remind.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8035CB6929DB8CBA00F03E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8035CB6B29DB8CBA00F03E02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8035CB6D29DB8CBA00F03E02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8035CB7029DB8CBA00F03E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8035CB7229DB8CBB00F03E02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8035CB7529DB8CBB00F03E02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8035CB7729DB8CBB00F03E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8035CB7D29DB8DC500F03E02 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		8035CB7F29DB8DCE00F03E02 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		8035CB8129DB8DD400F03E02 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		8035CB8329DB8DDA00F03E02 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		8035CB8529DB8DE000F03E02 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,13 @@
 			children = (
 				8035CB6929DB8CBA00F03E02 /* AppDelegate.swift */,
 				8035CB6B29DB8CBA00F03E02 /* SceneDelegate.swift */,
-				8035CB6D29DB8CBA00F03E02 /* ViewController.swift */,
-				8035CB6F29DB8CBA00F03E02 /* Main.storyboard */,
-				8035CB7229DB8CBB00F03E02 /* Assets.xcassets */,
+				8035CB7D29DB8DC500F03E02 /* View.swift */,
+				8035CB7F29DB8DCE00F03E02 /* Interactor.swift */,
+				8035CB8129DB8DD400F03E02 /* Presenter.swift */,
+				8035CB8329DB8DDA00F03E02 /* Entity.swift */,
+				8035CB8529DB8DE000F03E02 /* Router.swift */,
 				8035CB7429DB8CBB00F03E02 /* LaunchScreen.storyboard */,
+				8035CB7229DB8CBB00F03E02 /* Assets.xcassets */,
 				8035CB7729DB8CBB00F03E02 /* Info.plist */,
 			);
 			path = "VIPER-Remind";
@@ -127,7 +136,6 @@
 			files = (
 				8035CB7629DB8CBB00F03E02 /* LaunchScreen.storyboard in Resources */,
 				8035CB7329DB8CBB00F03E02 /* Assets.xcassets in Resources */,
-				8035CB7129DB8CBA00F03E02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8035CB6E29DB8CBA00F03E02 /* ViewController.swift in Sources */,
+				8035CB8629DB8DE000F03E02 /* Router.swift in Sources */,
+				8035CB8229DB8DD400F03E02 /* Presenter.swift in Sources */,
+				8035CB7E29DB8DC500F03E02 /* View.swift in Sources */,
+				8035CB8429DB8DDA00F03E02 /* Entity.swift in Sources */,
+				8035CB8029DB8DCE00F03E02 /* Interactor.swift in Sources */,
 				8035CB6A29DB8CBA00F03E02 /* AppDelegate.swift in Sources */,
 				8035CB6C29DB8CBA00F03E02 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8035CB6F29DB8CBA00F03E02 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8035CB7029DB8CBA00F03E02 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8035CB7429DB8CBB00F03E02 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +296,6 @@
 				INFOPLIST_FILE = "VIPER-Remind/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +323,6 @@
 				INFOPLIST_FILE = "VIPER-Remind/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
